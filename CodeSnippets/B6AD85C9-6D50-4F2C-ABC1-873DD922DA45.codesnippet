@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string></string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>public class &lt;#CellNameUICollectionViewCell#&gt;: UICollectionViewCell {
+  private lazy var &lt;#Element Name#&gt;: &lt;#Element Type#&gt; = {
+    let &lt;#Element Variable#&gt; = &lt;#Element Init#&gt;
+    return &lt;#Return Element#&gt;
+  }()
+  
+  required public init?(coder aDecoder: NSCoder) {
+    super.init(coder: aDecoder)
+  }
+  
+  public init(&lt;#Parameters#&gt;) {
+    super.init(frame: .zero)
+    &lt;#Actions Handle if Need#&gt;
+    self.style()
+    self.autolayout()
+  }
+  
+  override public func prepareForReuse() {
+    super.prepareForReuse()
+    &lt;#Element = nil // Clean Elements#&gt; 
+  }
+  
+  private func style() {
+    &lt;#Set Custom Elements#&gt;
+    self.addSubview(&lt;#Element#&gt;)
+  }
+  
+  private func autolayout() {
+    &lt;#Set Autolayout of the Elements#&gt;
+  }
+}
+</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>B6AD85C9-6D50-4F2C-ABC1-873DD922DA45</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetPlatformFamily</key>
+	<string>iphoneos</string>
+	<key>IDECodeSnippetSummary</key>
+	<string></string>
+	<key>IDECodeSnippetTitle</key>
+	<string>Custom UICollectionViewCell</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

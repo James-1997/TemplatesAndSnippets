@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string></string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>public class &lt;#CellNameTableViewCell#&gt;: UITableViewCell {
+  
+  public static let identifierCell = "&lt;#ClassName#&gt;"
+  
+  private lazy var &lt;#Element#&gt;: &lt;#ElementType#&gt; = {
+    let &lt;#Element variable#&gt; = &lt;#Element Init#&gt;()
+    &lt;#Custom element#&gt;
+    return &lt;#Return element#&gt;
+  }()
+  
+  required public init?(coder aDecoder: NSCoder) {
+    super.init(coder: aDecoder)
+  }
+  
+  override public init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
+    super.init(style: style, reuseIdentifier: reuseIdentifier)
+    &lt;#Handle Actions if Need#&gt;
+    self.style()
+    self.autolayout()
+  }
+  
+  override public func prepareForReuse() {
+    super.prepareForReuse()
+    &lt;#Element = nil // Clean Element#&gt;
+  }
+  
+  private func style() {
+    &lt;#Set Style of the Elements#&gt;
+    self.addSubview(&lt;#Element#&gt;)
+  }
+  
+  private func autolayout() {
+    &lt;#Set Auto Layout Rules of the Elements#&gt;
+  }
+}</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>7109C0D0-4B79-4DC7-92F3-32106E271812</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetPlatformFamily</key>
+	<string>iphoneos</string>
+	<key>IDECodeSnippetSummary</key>
+	<string></string>
+	<key>IDECodeSnippetTitle</key>
+	<string>Custom UITableViewCell</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>
